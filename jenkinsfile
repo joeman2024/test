@@ -1,0 +1,16 @@
+pipeline{
+   agent any 
+tools(nodejs "nnodejs")
+stages{
+  stage('install depencies'){
+        steps{
+       sh 'npm install'
+            }
+         }
+    stage('test') {
+        steps{
+          sh 'echo "testing application..." '
+         }
+      }
+   }
+}
