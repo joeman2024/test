@@ -12,5 +12,12 @@ stages{
           sh 'echo "testing application..." '
          }
       }
+      stage('deploy application'){
+
+         steps{
+              sh 'echo "deploying application...." '
+          
+         }
+      }
    }
 }
