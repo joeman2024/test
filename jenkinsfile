@@ -8,16 +8,16 @@ stages{
             }
          }
     stage('test') {
-        steps{
+         steps{
           sh 'echo "testing application..." '
+            }
          }
-      }
       stage('deploy application'){
 
-         steps{
+            steps{
               sh 'echo "deploying application...." '
           
+            }
          }
-      }
    }
 }
