@@ -1,22 +1,21 @@
 pipeline{
-   agent any 
-  stages{
-  stage('install depencies'){
-        steps{
-       sh 'npm install '
-            }
-         }
-    stage('test') {
-         steps{
-          sh 'echo "testing application..." '
-            }
-         }
-      stage('deploy application'){
-
-            steps{
-              sh 'echo "deploying application...." '
+      agent any 
+        stages{
+           stage('install depencies'){
+              steps{
+                sh 'npm install '
+                   }
+                  }
+            stage('test') {
+                  steps{
+                   sh 'echo "testing application..." '
+                     }
+                   }
+             stage('deploy application'){
+                   steps{
+                       sh 'echo "deploying application...." '
           
-            }
-         }
+                        }
+                     }
    }
 }
